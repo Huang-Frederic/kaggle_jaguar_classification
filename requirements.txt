@@ -1,0 +1,16 @@
+# Data
+numpy>=1.26,<2.0
+pandas>=2.0
+Pillow>=10.0
+
+# Visualization
+matplotlib>=3.7
+
+# Machine Learning
+scikit-learn>=1.3
+tensorflow>=2.15
+
+# Notebooks
+jupyter
+notebook
+ipykernel
