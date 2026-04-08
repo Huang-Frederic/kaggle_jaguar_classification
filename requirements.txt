@@ -14,3 +14,5 @@ tensorflow>=2.15
 jupyter
 notebook
 ipykernel
+
+tensorflow>=2.15
