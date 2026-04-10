@@ -74,7 +74,7 @@ def get_augmentation(level='none'):
     if level == 'moderate':
         return keras.Sequential([
             layers.RandomFlip('horizontal'),
-            layers.RandomBrightness(0.2),
+            layers.RandomBrightness(0.2, value_range=(0.0, 1.0)),
             layers.RandomContrast(0.2),
         ], name='aug_moderate')
 
@@ -83,7 +83,7 @@ def get_augmentation(level='none'):
             layers.RandomFlip('horizontal'),
             layers.RandomRotation(0.08),
             layers.RandomZoom((-0.1, 0.1)),
-            layers.RandomBrightness(0.25),
+            layers.RandomBrightness(0.25, value_range=(0.0, 1.0)),
             layers.RandomContrast(0.25),
         ], name='aug_heavy')
 
