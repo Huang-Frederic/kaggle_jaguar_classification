@@ -1,0 +1,5 @@
+outputs/
+data/
+.bashrc
+tensorboards/
+*__pycache__*
